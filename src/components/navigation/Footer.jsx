@@ -45,7 +45,7 @@ const Footer = () => {
         <img
           src={arrow}
           alt="arrow"
-          className="absolute bottom-72 left-[50%] right-[50%] cursor-pointer sm:bottom-60 lg:bottom-10"
+          className="absolute animate-bounce bottom-72 left-[50%] right-[50%] cursor-pointer sm:bottom-60 lg:bottom-10"
         />
 
         <div className="flex flex-col items-center justify-center gap-7 px-5 md:flex-row">

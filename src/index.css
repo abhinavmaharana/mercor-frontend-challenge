@@ -5,3 +5,13 @@
 body {
   font-family: "Archivo", sans-serif;
 }
+
+@font-face {
+  font-family: 'Agrandir';
+  src: local(AgrandirBold), url('./fonts/Agrandir/Agrandir-TextBold.otf') format('woff2');
+}
+
+@font-face {
+  font-family: 'Agrandir';
+  src: local(AgrandirGrandHeavy), url('./fonts/Agrandir/Agrandir-GrandHeavy.otf') format('woff2');
+}

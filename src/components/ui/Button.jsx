@@ -11,7 +11,7 @@ const Button = ({ text, img, onClick }) => {
           onClick={onClick}
         >
           <img src={img} alt="" />
-          <span className="text-[12px] font-bold hover:text-black transition">{text}</span>
+          <span className="text-[12px]  font-bold hover:text-black transition">{text}</span>
         </button>
       </div>
       <div className="flex lg:hidden">
