@@ -1,27 +1,27 @@
 /* eslint-disable no-unused-vars */
-import apple from '../../assets/apple.svg';
-import arrow from "../../assets/arrow.svg"
-import bigCure from "../../assets/bigCure.png"
-import playStore from "../../assets/playstore.svg"
-import social1 from "../../assets/social1.svg"
-import pillar from "../../assets/pillar.png"
-import social2 from "../../assets/social2.svg"
-import social3 from "../../assets/social3.svg"
-import Button from '../ui/Button';
+import apple from "../../assets/apple.svg";
+import arrow from "../../assets/arrow.svg";
+import bigCure from "../../assets/bigCure.png";
+import playStore from "../../assets/playstore.svg";
+import social1 from "../../assets/social1.svg";
+import pillar from "../../assets/pillar.png";
+import social2 from "../../assets/social2.svg";
+import social3 from "../../assets/social3.svg";
+import Button from "../ui/Button";
 
 const Footer = () => {
   return (
     <div>
-        <div className="mx-auto flex w-full max-w-7xl items-center justify-center px-5 py-3">
-            <div className="z-10 flex items-center justify-between gap-5 lg:hidden">
-                <Button img={apple} text="APP STORE"/>
-                <Button img={playStore} text="GOOGLE PLAY"/>
-            </div> 
+      <div className="mx-auto flex w-full max-w-7xl items-center justify-center px-5 py-3">
+        <div className="z-10 flex items-center justify-between gap-5 lg:hidden">
+          <Button img={apple} text="APP STORE" />
+          <Button img={playStore} text="GOOGLE PLAY" />
         </div>
-        <div className="relative mx-auto flex w-full max-w-7xl items-center justify-center px-3 py-5 lg:justify-between">
+      </div>
+      <div className="relative mx-auto flex w-full max-w-7xl items-center justify-center px-3 py-5 lg:justify-between">
         <div className="z-10 hidden items-center justify-between gap-5 lg:flex">
-          <Button img={apple} text="APP STORE"/>
-          <Button img={playStore} text="GOOGLE PLAY"/>
+          <Button img={apple} text="APP STORE" />
+          <Button img={playStore} text="GOOGLE PLAY" />
         </div>
         <img
           src={bigCure}
