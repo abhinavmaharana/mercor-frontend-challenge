@@ -1,4 +1,4 @@
-import bgSvg from "./assets/bg-svg.svg"
+import bgSvg from "./assets/bg-svg.svg";
 import Home from "./pages/Home";
 
 function App() {
