@@ -8,20 +8,29 @@ import pillar from "../../assets/pillar.png";
 import social2 from "../../assets/social2.svg";
 import social3 from "../../assets/social3.svg";
 import Button from "../ui/Button";
+import { socialMedia } from "../../utils/data";
 
 const Footer = () => {
+  const handleBtnAndroid = () => {
+    window.location.href = 'https://play.google.com/';
+  }
+
+  const handleBtnIOS = () => {
+    window.location.href = 'https://www.apple.com/in/app-store/';
+  }
+
   return (
     <div>
       <div className="mx-auto flex w-full max-w-7xl items-center justify-center px-5 py-3">
         <div className="z-10 flex items-center justify-between gap-5 lg:hidden">
-          <Button img={apple} text="APP STORE" />
-          <Button img={playStore} text="GOOGLE PLAY" />
+          <Button img={apple} text="APP STORE" onClick={handleBtnIOS} />
+          <Button img={playStore} text="GOOGLE PLAY" onClick={handleBtnAndroid} />
         </div>
       </div>
       <div className="relative mx-auto flex w-full max-w-7xl items-center justify-center px-3 py-5 lg:justify-between">
         <div className="z-10 hidden items-center justify-between gap-5 lg:flex">
-          <Button img={apple} text="APP STORE" />
-          <Button img={playStore} text="GOOGLE PLAY" />
+          <Button img={apple} text="APP STORE" onClick={handleBtnIOS} />
+          <Button img={playStore} text="GOOGLE PLAY" onClick={handleBtnAndroid} />
         </div>
         <img
           src={bigCure}
@@ -49,13 +58,16 @@ const Footer = () => {
             Savings Bank, Members FDIC.
           </p>
           <div className="flex items-center justify-center gap-5">
-            {[social1, social2, social3].map((social, index) => (
-              <img
-                key={index}
-                src={social}
-                alt={`social${index + 1}`}
-                className="cursor-pointer"
-              />
+            {socialMedia.map((item, index) => (
+              <div key={index}>
+                <a href={item.link}>
+                  <img 
+                    src={item.image}
+                    alt={`social${index + 1}`}
+                    className="cursor-pointer"
+                  />
+                </a>
+              </div>
             ))}
           </div>
         </div>
